@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision & Mission - IIIT Vadodara</title>
+    <style>
+        /* Reset and Base Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f5f9;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .container:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .section:hover {
+            background-color: #f1f7ff;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #333;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            flex: 1;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .section h2:hover {
+            color: #1a73e8;
+        }
+
+        .section img {
+            width: 100px;
+            margin-left: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .section img:hover {
+            transform: scale(1.05);
+        }
+
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #555;
+            font-size: 16px;
+        }
+
+        /* Specific Image Sizes */
+        #vision img {
+            width: 80px;
+        }
+        #mission img {
+            width: 100px;
+        }
+
+        /* Centered Image Between Vision and Mission */
+        .center-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .center-image img {
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .center-image img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Vision Section -->
+        <div class="section" id="vision">
+            <div>
+                <h2>Vision</h2>
+                <ul>
+                    <li>To create leaders who will be at the forefront of innovation, creating and applying pivotal technologies that will transform the world of tomorrow, and seek solutions to problems of our businesses and our society.</li>
+                </ul>
+            </div>
+            <img src="vision.png" alt="Vision Image">
+        </div>
+
+        <!-- Centered Image between Vision and Mission -->
+        <div class="center-image">
+            <img src="centerimage.png" alt="Centered Image">
+        </div>
+
+        <!-- Mission Section -->
+        <div class="section" id="mission">
+            <div>
+                <h2>Mission</h2>
+                <ul>
+                    <li>To deliver world-class education to students so that they excel in deep technical know-how including in new technologies, creativity, social awareness, entrepreneurial skills, and lifelong learning.</li>
+                    <li>To conduct curiosity-driven and problem-led research that generates transformative ideas that will improve our society and our world.</li>
+                    <li>To promote a transparent culture which prizes practical learning, innovation, problem-solving, teamwork, adaptation to change, and entrepreneurship.</li>
+                    <li>To engage and develop educators who are responsible to educate the next generation and to ensure that we always meet our exacting standards for education, research, and culture.</li>
+                </ul>
+            </div>
+            <img src="website1.png" alt="Mission Image">
+        </div>
+    </div>
+</body>
+</html>

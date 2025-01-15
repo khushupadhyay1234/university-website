@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .section-container {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .section-content {
+            padding: 20px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .date {
+            background-color: #f4b000;
+            color: white;
+            font-weight: bold;
+            padding: 8px;
+            margin-right: 15px;
+            border-radius: 4px;
+            text-align: center;
+            width: 60px;
+        }
+
+        .date .month {
+            font-size: 14px;
+        }
+
+        .date .day {
+            font-size: 18px;
+        }
+
+        .details {
+            flex-grow: 1;
+        }
+
+        .details .title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .details .description {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .view-more {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .view-more a {
+            text-decoration: none;
+            color: #003366;
+            font-weight: bold;
+        }
+
+        .view-more a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Events Section -->
+    <div class="section-container">
+        <div class="section-header">Events</div>
+        <div class="section-content">
+            <div class="item">
+                <div class="date">
+                    <div class="day">11 TO 17</div>
+                    <div class="month">NOV</div>
+                    <div class="year">2024</div>
+                </div>
+                <div class="details">
+                    <div class="title">IIITV's Annual Tech Fest "Cerebro 2024-25"</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">
+                    <div class="day">4 TO 24</div>
+                    <div class="month">NOV</div>
+                    <div class="year">2024</div>
+                </div>
+                <div class="details">
+                    <div class="title">IIITV (Intra) Web Hackathon</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">
+                    <div class="day">31</div>
+                    <div class="month">OCT</div>
+                    <div class="year">2024</div>
+                </div>
+                <div class="details">
+                    <div class="title">Ph.D. Admissions (Full-Time / Part-Time)</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">
+                    <div class="day">JULY</div>
+                    <div class="month">AUGUST</div>
+                    <div class="year">2024</div>
+                </div>
+                <div class="details">
+                    <div class="title">B.Tech 2024-25 Reporting Process</div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="#">View more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <div class="section-container">
+        <div class="section-header">News</div>
+        <div class="section-content">
+            <div class="item">
+                <div class="date">
+                    <div class="day">24</div>
+                    <div class="month">AUGUST</div>
+                    <div class="year">2024</div>
+                </div>
+                <div class="details">
+                    <div class="title">8th Prof. Vijaya Agarwala Memorial National Workshop</div>
+                    <div class="description">On Microwave Absorbing Materials (VAMMAM - 2024).</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">
+                    <div class="day">29</div>
+                    <div class="month">JUNE</div>
+                    <div class="year">2024</div>
+                </div>
+                <div class="details">
+                    <div class="title">Tree Plantation at IIIT Vadodara Permanent Campus</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">
+                    <div class="day">5</div>
+                    <div class="month">FEB</div>
+                    <div class="year">2023</div>
+                </div>
+                <div class="details">
+                    <div class="title">IIITV Team (BTech 2021 Batch)</div>
+                    <div class="description">Sanidhya Kumar, Abhay Upadhyay, Samanway Maji, Riya...</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="date">
+                    <div class="day">*</div>
+                    <div class="month">*</div>
+                    <div class="year">2022</div>
+                </div>
+                <div class="details">
+                    <div class="title">IIITV's team HACKpackers</div>
+                    <div class="description">Mugdha Sharma, Madhur Gupta, Kalash Shah...</div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="#">View more</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

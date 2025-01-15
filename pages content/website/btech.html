@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modes of Undergraduate Admissions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f5f2;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .left-image {
+            flex: 1;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .left-image img {
+            width: 100%;
+            padding: 10px; /* Add padding around the image */
+            background-color: #fff; /* Background color for the padding */
+            border-radius: 12px;
+            border: 4px solid #bbb; /* Enhanced border style */
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Image hover effect */
+        .left-image img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .right-content {
+            flex: 2;
+        }
+
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            position: relative;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            color: #007bff;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .card a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Images on the left side -->
+    <div class="left-image">
+        <img src="btech.png" alt="IIIT Vadodara Image">
+        <img src="btech1.png.png" alt="Additional Image">
+    </div>
+
+    <!-- Right-side content -->
+    <div class="right-content">
+        <div class="header">Modes of Undergraduate Admissions</div>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Undergraduate Entrance Examination (UGEE)</h3>
+                <p>For all Dual-degree Programmes</p>
+                <a href="#">→</a>
+            </div>
+            <div class="card">
+                <h3>Special Channel of Admission (SPEC)</h3>
+                <p>For Single-degree Programmes</p>
+                <a href="#">→</a>
+            </div>
+            <div class="card">
+                <h3>Lateral Entry Entrance Examination (LEEE)</h3>
+                <p>For all Dual-degree Programmes</p>
+                <a href="#">→</a>
+            </div>
+            <div class="card">
+                <h3>Olympiad</h3>
+                <p>For Olympiad winners</p>
+                <a href="#">→</a>
+            </div>
+            <div class="card">
+                <h3>Direct Admissions for Students Abroad (DASA)</h3>
+                <p>For Single-degree and Dual-degree Programmes</p>
+                <a href="#">→</a>
+            </div>
+            <div class="card">
+                <h3>JEE (Main)</h3>
+                <p>For Single-degree Programmes</p>
+                <a href="#">→</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

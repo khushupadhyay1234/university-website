@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Members</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px 0;
+            color: #0056b3;
+        }
+        .faculty-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .faculty-card {
+            width: 200px;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ddd;
+            transition: transform 0.2s;
+        }
+        .faculty-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .faculty-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #0056b3;
+        }
+        .faculty-card h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+            color: #333;
+        }
+        .faculty-card p {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .faculty-card p.subject {
+            font-weight: bold;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faculty Members</h1>
+    <div class="faculty-container">
+        <div class="faculty-card">
+            <img src="image1.png.png" alt="Aakansha Natani">
+            <h3>Aakansha Natani</h3>
+            <p class="subject">Subject: Maths</p>
+            <p>Qualification: PhD in Applied Mathematics from IIT Delhi</p>
+        </div>
+        <div class="faculty-card">
+            <img src="image2 (2).png" alt="Abhishek Deshpande">
+            <h3>Abhishek Deshpande</h3>
+            <p class="subject">Subject: CSE</p>
+            <p>Qualification: PhD in Computer Science from Stanford University</p>
+        </div>
+        <div class="faculty-card">
+            <img src="image3.png" alt="Abhishek Srivastava">
+            <h3>Abhishek Srivastava</h3>
+            <p class="subject">Subject: ECE</p>
+            <p>Qualification: PhD in Electronics Engineering from IIT Bombay</p>
+        </div>
+        <div class="faculty-card">
+            <img src="image4.png" alt="Aditi Mukherjee">
+            <h3>Aditi Mukherjee</h3>
+            <p class="subject">Subject: English</p>
+            <p>Qualification: PhD in English Literature from Oxford University</p>
+        </div>
+        <div class="faculty-card">
+            <img src="image5.png" alt="Bapi Raju S">
+            <h3>Bapi Raju S</h3>
+            <p class="subject">Subject: Physics</p>
+            <p>Qualification: PhD in Physics from MIT</p>
+        </div>
+        <div class="faculty-card">
+            <img src="image6.png" alt="Aniket Alam">
+            <h3>Aniket Alam</h3>
+            <p class="subject">Subject: CSE</p>
+            <p>Qualification: PhD in Computer Science from IIT Kanpur</p>
+        </div>
+        <div class="faculty-card">
+            <img src="image7.png.png" alt="Charu Sharma">
+            <h3>Charu Sharma</h3>
+            <p class="subject">Subject: Maths</p>
+            <p>Qualification: PhD in Mathematics from Cambridge University</p>
+        </div>
+    </div>
+</body>
+</html>

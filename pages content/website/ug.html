@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor of Technology - IIIT Vadodara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border: 1px solid #ddd;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 26px;
+            color: #333;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .programs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .programs h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #555;
+            padding: 10px 20px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .programs h3.active {
+            border-bottom: 2px solid #333;
+            color: #333;
+        }
+        .programs h3:hover {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        .content {
+            display: none;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fafafa;
+        }
+        .content img {
+            width: 250px;
+            margin-right: 20px;
+            border-radius: 8px;
+            border: 2px solid #eee;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        .content p {
+            flex: 1;
+            line-height: 1.6;
+            font-size: 16px;
+            color: #555;
+        }
+        .content a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Undergraduate Programs in Technology</h1>
+        </div>
+
+        <div class="programs">
+            <h3 id="cse-tab" onclick="showContent('cse')" class="active">Computer Science and Engineering</h3>
+            <h3 id="it-tab" onclick="showContent('it')">Information Technology</h3>
+        </div>
+
+        <div class="content" id="cse-content" style="display: flex;">
+            <img src="cse.png" alt="CSE Image">
+            <p>
+                <strong>B.Tech in Computer Science and Engineering</strong> is designed to make a strong foundation in CSE that includes electronics and hardware. Computer science courses are introduced in the early semesters while non-IT courses in the later stages. IT workshops are specially designed courses allowing the students to have mastery in the use of the latest software technologies. The courses in mathematics, sciences, engineering, and humanities enable students to explore the wider applications of technology.
+                <br><br>
+                <a href="#">AC Approved Curriculum for B.Tech. CSE</a>
+            </p>
+        </div>
+
+        <div class="content" id="it-content">
+            <img src="IT.png" alt="IT Image"> <!-- Update this path for the IT image -->
+            <p>
+                <strong>B.Tech in Information Technology</strong> program focuses on providing foundational skills in IT. Students gain knowledge of software development, web technologies, data analysis, and networking. IT workshops and labs ensure hands-on experience with the latest tools, preparing students for a dynamic tech environment.
+                <br><br>
+                <a href="#">AC Approved Curriculum for B.Tech. IT</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showContent(program) {
+            // Hide all content sections
+            document.getElementById("cse-content").style.display = "none";
+            document.getElementById("it-content").style.display = "none";
+            // Remove active class from tabs
+            document.getElementById("cse-tab").classList.remove("active");
+            document.getElementById("it-tab").classList.remove("active");
+
+            // Show the selected content and add active class to the selected tab
+            document.getElementById(program + "-content").style.display = "flex";
+            document.getElementById(program + "-tab").classList.add("active");
+        }
+
+        // Show CSE content by default
+        showContent('cse');
+    </script>
+</body>
+</html>
